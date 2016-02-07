@@ -210,7 +210,7 @@ def pull_players_data(begin_week,end_week,season_weeks,login_details):
 def get_last_week(database,table):
     '''
     Takes the name of database and table where
-    to pull the most recent record
+    to pull the most recent record and returns the year and week
 
     Parameters
     ----------
@@ -219,7 +219,7 @@ def get_last_week(database,table):
 
     Returns
     -------
-    a dict
+    a tuple
     '''
     
     conn = sqlite3.connect(database)
